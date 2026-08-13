@@ -1,11 +1,6 @@
 #include "Dom_JLRV_Controller.h"
+#include "Dom_JLRV_View.cpp"
 #include <stdio.h>
-
-void ordenarPecas(){
-	for (int gerar = 0; gerar < 28; gerar++){
-		printf("[%d|%d]", conjunto[gerar].lado1, conjunto[gerar].lado2);
-	}
-}
 
 void embaralharConjunto(peca conjunto[]){
 	

@@ -1,1 +1,1 @@
-void ordenarPecas()
+void printarPecas()

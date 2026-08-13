@@ -11,5 +11,5 @@
 
 int main(){
 	geradorDomino();
-	ordenarPecas();
+	printarPecas();
 }
