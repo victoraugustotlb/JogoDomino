@@ -2,7 +2,6 @@
 //Renato Corral Silva
 
 
-
 // Struct dos lados do domino
 typedef struct{
     int lado1;
