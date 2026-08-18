@@ -19,4 +19,5 @@ void printarPecas(peca conjunto[]){
     for (int gerar = 0; gerar < 28; gerar++){
         printf("[%d|%d]", conjunto[gerar].lado1, conjunto[gerar].lado2);
     }
+    printf("\n");
 }
