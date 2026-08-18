@@ -5,4 +5,4 @@
 //Renato Corral Silva
 //Victor Augusto Toledo Lucio Borghi
 
-void geradorDomino()
+void geradorDomino();
