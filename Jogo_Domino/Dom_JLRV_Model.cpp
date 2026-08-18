@@ -1,8 +1,9 @@
 //Dom_JLRV_PROJETO - Projeto Domino
-//12/08/2026
-//Joao
+//13/08/2026
+//Joao Pedro Lemos Romano Francisco da Silva
 //Leopoldo Ortuzal Zuchieri
 //Renato Corral Silva
+//Victor Augusto Toledo Lucio Borghi
 
 #include <stdio.h>
 
@@ -12,6 +13,7 @@ typedef struct {
     int lado2;
 } peca;
 
+//Funcao responsavel por gerar as pecas do domino 
 void geradorDomino(peca conjunto[]){
     int vetor = 0;
     for (int i = 0; i <= 6; i++){
