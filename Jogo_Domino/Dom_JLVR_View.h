@@ -4,6 +4,7 @@
 //Leopoldo Ortuzal Zuchieri
 //Renato Corral Silva
 //Victor Augusto Toledo Lucio Borghi
+#include "Dom_JLRV_Model.h"
 
 void printMenu();
-void printarPecas();
+void printarPecas(peca conjunto[]);

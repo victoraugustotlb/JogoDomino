@@ -5,4 +5,9 @@
 //Renato Corral Silva
 //Victor Augusto Toledo Lucio Borghi
 
-void geradorDomino();
+
+typedef struct {
+    int lado1;
+    int lado2;
+} peca;
+void geradorDomino(peca conjunto[]);

@@ -4,8 +4,7 @@
 //Leopoldo Ortuzal Zuchieri
 //Renato Corral Silva
 //Victor Augusto Toledo Lucio Borghi
+#include "Dom_JLRV_Model.h"
 
-
-void embaralharConjunto();
-
-void menu();
+void embaralharConjunto(peca conjunto[]);
+void menu(peca conjunto[]);

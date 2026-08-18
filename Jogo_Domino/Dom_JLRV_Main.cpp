@@ -7,11 +7,12 @@
 
 
 #include <stdio.h>
-#include "Dom_JLRV_Model.cpp"
-#include "Dom_JLVR_View.cpp"
-#include "Dom_JLRV_Controller.cpp"
+#include "Dom_JLRV_Model.h"
+#include "Dom_JLVR_View.h"
+#include "Dom_JLRV_Controller.h"
 
 
 int main(){
-    menu();
+	peca conjunto[28];
+    menu(conjunto);
 }

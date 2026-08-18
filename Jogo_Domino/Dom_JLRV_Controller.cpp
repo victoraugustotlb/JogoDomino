@@ -8,12 +8,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "Dom_JLRV_Controller.h"
-#include "Dom_JLVR_View.cpp"
+#include "Dom_JLVR_View.h"
 #include "Dom_JLRV_Model.h"
 
 void menu(peca conjunto[]){
 	int rodando = 1;
-    peca conjunto[28];
     geradorDomino(conjunto);
 	while(rodando == 1){
 		int escolha;
