@@ -5,4 +5,5 @@
 //Renato Corral Silva
 //Victor Augusto Toledo Lucio Borghi
 
+void printMenu();
 void ordenarPecas();

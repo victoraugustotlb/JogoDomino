@@ -14,5 +14,20 @@
 int main(){
     geradorDomino();
     ordenarPecas();
+	int rodando = 1;
+	while(rodando == 1){
+		int escolha;
+		printMenu();
+		scanf("%d", &escolha);
+		if(escolha == 1){
+			
+		}
+		else if(escolha == 2){
+
+		}
+		else if(escolha == 3){
+
+		}
+	}
     return 0;
 }
