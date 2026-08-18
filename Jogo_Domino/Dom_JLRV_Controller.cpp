@@ -5,12 +5,14 @@
 //Renato Corral Silva
 //Victor Augusto Toledo Lucio Borghi
 
+//Declaracao dos headers necessarios para o controller
 #include <stdio.h>
 #include <stdlib.h>
 #include "Dom_JLRV_Controller.h"
 #include "Dom_JLVR_View.h"
 #include "Dom_JLRV_Model.h"
 
+//Sistema do menu inicial do jogo
 void menu(peca conjunto[]){
 	int rodando = 1;
     geradorDomino(conjunto);
@@ -33,7 +35,7 @@ void menu(peca conjunto[]){
 	}
 }
 
-
+//Funcao responsavel por embaralhar as pecas
 void embaralharConjunto(peca conjunto[]){
     for(int i = 27; i > 0; i--){ 
         int j = rand() % (i + 1); 
