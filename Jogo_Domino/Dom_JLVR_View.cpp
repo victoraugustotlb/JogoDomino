@@ -9,13 +9,13 @@
 
 void printMenu(){
     printf("Menu:\n");
-	printf("1)Embaralhar peças\n");
-	printf("2)Desembaralhar peças\n");
-	printf("3)Mostrar peças\n");
+	printf("1)Embaralhar pecas\n");
+	printf("2)Desembaralhar pecas\n");
+	printf("3)Mostrar pecas\n");
 	printf("4)Sair\n");
 }
 
-void ordenarPecas(){
+void printarPecas(peca conjunto[]){
     for (int gerar = 0; gerar < 28; gerar++){
         printf("[%d|%d]", conjunto[gerar].lado1, conjunto[gerar].lado2);
     }
