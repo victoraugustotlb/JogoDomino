@@ -12,9 +12,6 @@ typedef struct {
     int lado2;
 } peca;
 
-// Array das pecas
-peca conjunto[28];
-
 void geradorDomino(peca conjunto[]){
     int vetor = 0;
     for (int i = 0; i <= 6; i++){

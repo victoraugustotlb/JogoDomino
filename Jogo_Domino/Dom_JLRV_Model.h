@@ -5,9 +5,13 @@
 //Renato Corral Silva
 //Victor Augusto Toledo Lucio Borghi
 
+#ifndef DOM_JLRV_MODEL_H
+#define DOM_JLRV_MODEL_H
 
 typedef struct {
     int lado1;
     int lado2;
 } peca;
 void geradorDomino(peca conjunto[]);
+
+#endif
