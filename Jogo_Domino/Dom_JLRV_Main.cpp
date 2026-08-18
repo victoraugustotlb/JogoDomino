@@ -6,10 +6,13 @@
 //Victor Augusto Toledo Lucio Borghi
 
 
+#include <stdio.h>
 #include "Dom_JLRV_Model.cpp"
 #include "Dom_JLVR_View.cpp"
+#include "Dom_JLRV_Controller.cpp"
 
 int main(){
-	geradorDomino();
-	printarPecas();
+    geradorDomino();
+    ordenarPecas();
+    return 0;
 }
