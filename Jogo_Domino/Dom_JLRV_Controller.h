@@ -6,4 +6,4 @@
 //Victor Augusto Toledo Lucio Borghi
 
 
-void embaralharConjunto();
+void embaralharConjunto(peca conjunto[]);
