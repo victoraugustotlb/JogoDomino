@@ -4,7 +4,6 @@
 //Leopoldo Ortuzal Zuchieri
 //Renato Corral Silva
 //Victor Augusto Toledo Lucio Borghi
-
 #ifndef DOM_JLVR_VIEW_H
 #define DOM_JLVR_VIEW_H
 #include "Dom_JLRV_Model.h"

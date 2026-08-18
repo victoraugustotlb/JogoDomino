@@ -5,7 +5,7 @@
 //Renato Corral Silva
 //Victor Augusto Toledo Lucio Borghi
 
-#include "Dom_JLRV_View.h"
+#include "Dom_JLVR_View.h"
 #include <stdio.h>
 
 //Menu principal do jogo
