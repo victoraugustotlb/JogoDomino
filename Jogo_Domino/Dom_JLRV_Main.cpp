@@ -5,13 +5,13 @@
 //Renato Corral Silva
 //Victor Augusto Toledo Lucio Borghi
 
-
+//Declaracao dos headers necessarios para o funcionamento do domino
 #include <stdio.h>
 #include "Dom_JLRV_Model.h"
-#include "Dom_JLVR_View.h"
+#include "Dom_JLRV_View.h"
 #include "Dom_JLRV_Controller.h"
 
-
+//Função principal do programa
 int main(){
 	peca conjunto[28];
     menu(conjunto);
