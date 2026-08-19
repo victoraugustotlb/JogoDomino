@@ -1,16 +1,11 @@
-//Dom_JLRV_PROJETO - Projeto Domino
+//Dom_JLRV_Model - Projeto Domino
 //12/08/2026
 //Joao
 //Leopoldo Ortuzal Zuchieri
 //Renato Corral Silva
 
 #include <stdio.h>
-
-// Struct dos lados do domino
-typedef struct {
-    int lado1;
-    int lado2;
-} peca;
+#include "Dom_JLRV_Model.h"
 
 void geradorDomino(peca conjunto[]){
     int vetor = 0;

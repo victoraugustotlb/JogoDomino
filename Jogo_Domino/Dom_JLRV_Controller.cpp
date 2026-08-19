@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "Dom_JLRV_Controller.h"
-#include "Dom_JLVR_View.h"
+#include "Dom_JLRV_View.cpp"
 #include "Dom_JLRV_Model.h"
 
 void menu(peca conjunto[]){
@@ -18,11 +18,14 @@ void menu(peca conjunto[]){
 		int escolha;
 		printMenu();
 		scanf("%d", &escolha);
+		
 		if(escolha == 1){
 			embaralharConjunto(conjunto);
+			printarPecas(conjunto);
 		}
 		else if(escolha == 2){
             geradorDomino(conjunto);
+            printarPecas(conjunto);
 		}
 		else if(escolha == 3){
             printarPecas(conjunto);

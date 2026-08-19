@@ -1,4 +1,4 @@
-//Dom_JLRV_PROJETO - Projeto Domino
+//Dom_JLRV_Projeto - Projeto Domino
 //13/08/2026
 //Joao Pedro Lemos Romano Francisco da Silva
 //Leopoldo Ortuzal Zuchieri
@@ -7,9 +7,8 @@
 
 
 #include <stdio.h>
-#include "Dom_JLRV_Model.h"
-#include "Dom_JLVR_View.h"
-#include "Dom_JLRV_Controller.h"
+#include "Dom_JLRV_Model.cpp"
+#include "Dom_JLRV_Controller.cpp"
 
 
 int main(){
