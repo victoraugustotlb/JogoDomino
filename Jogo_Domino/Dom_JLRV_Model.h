@@ -5,13 +5,19 @@
 //Renato Corral Silva
 //Victor Augusto Toledo Lucio Borghi
 
-#ifndef DOM_JLRV_MODEL_H
-#define DOM_JLRV_MODEL_H
+void gerarPecas();
+void embaralharPecas();
 
-typedef struct {
-    int lado1;
-    int lado2;
-} peca;
-void geradorDomino(peca conjunto[]);
+struct Peca
+	{
+	int lado1;
+	int lado2;
+	char status;  //NULL, '1', '2', 'M'
+	              //NULL=disponivel, 1=com o jogador 1, 2=com o jogador 2, M=sobre a mesa
+	} pecas[28];
 
-#endif
+//variaveis globais
+
+int mesaE, mesaD;   //extremidades Esquerda e Direita da mesa
+int qtmesa;   		//qtde de pecas na mesa
+//etc
