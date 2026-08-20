@@ -6,7 +6,10 @@
 //Victor Augusto Toledo Lucio Borghi
 
 void apresentarPecas();
+<<<<<<< HEAD
 
 void menu();
 
 void limparTela();
+=======
+>>>>>>> 48103f019f20952e60e738cfe8566ad1d5555e60

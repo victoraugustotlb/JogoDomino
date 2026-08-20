@@ -6,5 +6,8 @@
 //Victor Augusto Toledo Lucio Borghi
 
 void jogar();
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 48103f019f20952e60e738cfe8566ad1d5555e60
