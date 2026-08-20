@@ -6,12 +6,14 @@
 //Victor Augusto Toledo Lucio Borghi
 
 
-#include <stdio.h>
-#include "Dom_JLRV_Model.cpp"
-#include "Dom_JLRV_Controller.cpp"
+#include "Dom_XXXXX_Model.cpp"
+#include "Dom_XXXXX_Controller.cpp"
 
-
-int main(){
-	peca conjunto[28];
-    menu(conjunto);
+main()
+{
+	//FUNÇÕES DE INICIALIZAÇÃO
+	//aqui ficam as funções que são chamadas e executadas uma única vez !
+	gerarPecas();   //fica no Model
+	jogar();    	//fica no Controller	
+	
 }
