@@ -1,4 +1,4 @@
-//Dom_JLRV_MODEL - Projeto Domino
+//Dom_JLRV_Model - Projeto Domino
 //13/08/2026
 //Joao Pedro Lemos Romano Francisco da Silva
 //Leopoldo Ortuzal Zuchieri
