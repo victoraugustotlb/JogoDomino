@@ -1,4 +1,4 @@
-//Dom_JLRV_View - Projeto Domino
+//Dom_JLRV_Controller - Projeto Domino
 //13/08/2026
 //Joao Pedro Lemos Romano Francisco da Silva
 //Leopoldo Ortuzal Zuchieri
@@ -7,11 +7,26 @@
 
 #include <stdio.h>
 
-#include "Dom_XXXXX_View.h"
+#include "Dom_JLRV_View.h"
 
 //SOMENTE AQUI NO VIEW, podemos ter "printf" e "scanf"
 
-//Apresenta todas as peÃ§as
+//Apresenta todas as peças
+
+void menu(){
+    printf("======Menu=====\n\n");
+	printf("1)Embaralhar pecas\n");
+	printf("2)Desembaralhar pecas\n");
+	printf("3)Mostrar pecas\n");	
+	printf("4)Sair\n");
+	printf("\n===============\n");
+	printf("Escolha uma opcao: ");
+}
+
+void limparTela(){
+	system("cls");
+}
+
 void apresentarPecas()
 {
 	printf("\n");
@@ -19,3 +34,5 @@ void apresentarPecas()
 		printf("[%d|%d] ", pecas[i].lado1, pecas[i].lado2);
 	printf("\n\n");
 }
+
+

@@ -1,4 +1,4 @@
-//Dom_JLRV_Model - Projeto Domino
+//Dom_JLRV_Controller - Projeto Domino
 //13/08/2026
 //Joao Pedro Lemos Romano Francisco da Silva
 //Leopoldo Ortuzal Zuchieri
@@ -6,7 +6,7 @@
 //Victor Augusto Toledo Lucio Borghi
 
 #include <stdlib.h>
-#include <time.h>   //necess√°rio pois contem a variavel NULL
+#include <time.h>   //necess·rio pois contem a variavel NULL
 #include "Dom_JLRV_Model.h"
 
 
@@ -26,7 +26,7 @@ void gerarPecas()
 		 }
 }
 
-//embaralhar as pe√ßas
+//embaralhar as peÁas
 void embaralharPecas()
 {
 	int i, pos;
