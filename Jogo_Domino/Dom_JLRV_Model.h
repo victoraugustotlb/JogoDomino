@@ -12,6 +12,7 @@ typedef struct {
     int lado1;
     int lado2;
 } peca;
+
 void geradorDomino(peca conjunto[]);
 
 #endif

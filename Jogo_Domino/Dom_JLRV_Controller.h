@@ -10,4 +10,5 @@
 
 void embaralharConjunto(peca conjunto[]);
 void menu(peca conjunto[]);
+void menuJogo(peca conjunto[]);
 #endif

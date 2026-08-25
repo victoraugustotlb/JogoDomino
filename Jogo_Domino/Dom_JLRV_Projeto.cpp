@@ -7,11 +7,13 @@
 
 
 #include <stdio.h>
+#include <time.h>
 #include "Dom_JLRV_Model.cpp"
 #include "Dom_JLRV_Controller.cpp"
 
 
 int main(){
+	srand(time(NULL));
 	peca conjunto[28];
     menu(conjunto);
 }

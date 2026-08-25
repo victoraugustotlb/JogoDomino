@@ -10,6 +10,7 @@
 #include "Dom_JLRV_Controller.h"
 #include "Dom_JLRV_View.cpp"
 #include "Dom_JLRV_Model.h"
+void menuJogo();
 
 void menu(peca conjunto[]){
 	int rodando = 1;
@@ -28,11 +29,50 @@ void menu(peca conjunto[]){
             printarPecas(conjunto);
 		}
 		else if(escolha == 3){
+			limparTela();
             printarPecas(conjunto);
 		}
-        else if(escolha == 4){
+		else if(escolha == 4){
+			limparTela();
+			menuJogo(conjunto);
+		}
+        else if(escolha == 5){
             rodando = 0;
         }
+	}
+}
+
+void menuJogo(peca conjunto[]){
+	int rodando = 1;
+	while(rodando == 1){
+		int escolha;
+		subMenu();
+		scanf("%d", &escolha);
+		
+		if(escolha == 1){
+			//Jogo começa - 2 jogadores
+			limparTela();
+		    mesa(conjunto);
+		}
+		else if(escolha == 2){
+			//Jogo começa - 2 jogadores
+		}
+		else if(escolha == 3){
+			//Jogo começa - 2 jogadores
+		}
+		else if(escolha == 4){
+			//Jogo começa - 2 jogadores
+		}
+		else if(escolha == 5){
+			//Jogo começa - 2 jogadores
+		}
+		else if(escolha == 6){
+			//Jogo começa - 2 jogadores
+		}
+		else if(escolha == 7){
+			limparTela();
+			rodando = 0;
+		}
 	}
 }
 

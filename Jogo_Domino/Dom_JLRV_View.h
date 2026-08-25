@@ -10,4 +10,7 @@
 
 void printMenu();
 void printarPecas(peca conjunto[]);
+void fclear();
+void limparTela();
+void mesa(peca conjunto[]);
 #endif
