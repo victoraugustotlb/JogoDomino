@@ -45,3 +45,18 @@ void embaralharConjunto(peca conjunto[]){
         conjunto[j] = temp; 
     } 
 }
+
+void distribuirPecas(peca conjunto[], peca jogador1[], peca jogador2[]){
+	int cont = 0;
+	int num;
+	for(int i = 27; i > 12; i--){
+		if(i >= 20){
+			num = (i - 27) * -1;
+			jogador1[num] = conjunto[i];
+		}
+		else{
+			num = (i - 19) * -1;
+			jogador2[num] = conjunto[i];
+		}
+	}
+}
