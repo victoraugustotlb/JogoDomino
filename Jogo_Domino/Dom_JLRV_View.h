@@ -10,5 +10,6 @@
 
 void printMenu();
 void printarPecas(peca conjunto[]);
+void regras();
 void submenu();
 #endif
