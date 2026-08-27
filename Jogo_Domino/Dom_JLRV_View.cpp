@@ -10,14 +10,17 @@
 
 //Menu principal do jogo
 void printMenu(){
-    printf("1 - Iniciar jogo (2 jogadores)\n");
-	printf("2 - Iniciar jogo (contra o computador)\n");
-	printf("3 - Retornar ao jogo interrompido\n");
-	printf("4 - Regras gerais do Jogo\n");
-	printf("5 - Salvar o jogo em arquivo\n");
-	printf("6 - Recuperar o jogo salvo em arquivo\n");
-	printf("0 – Sair do programa\n");
-	printf("Opção selecionada: ");
+    printf("========================================\n");
+    printf("              JOGO DOMINO\n");
+    printf("========================================\n");
+    printf("[1] - Iniciar jogo (2 jogadores)\n");
+	printf("[2] - Iniciar jogo (contra o computador)\n");
+	printf("[3] - Retornar ao jogo interrompido\n");
+	printf("[4] - Regras gerais do Jogo\n");
+	printf("[5] - Salvar o jogo em arquivo\n");
+	printf("[6] - Recuperar o jogo salvo em arquivo\n");
+	printf("[0] - Sair do programa\n");
+	printf("Opcao selecionada: ");
 }
 
 //Funcao de Sub-menu da opcao jogar
@@ -74,12 +77,21 @@ void regras(){
 
     printf("========================================\n");
 }
+
+//Submenu de opcoes do jogo
 void submenu(){
-	printf("J  - Jogar (possíveis n1 ou n2)\n");
-	printf("C – Comprar (a qualquer momento)\n");
-	printf("P – Passar (permitido somente em caso especial)\n");
-	printf("S – Sair (interromper o jogo voltando ao menu inicial)\n");
-	printf("Opção selecionada: ");
+	printf("[J] - Jogar (possiveis n1 ou n2)\n");
+	printf("[C] - Comprar (a qualquer momento)\n");
+	printf("[P] - Passar (permitido somente em caso especial)\n");
+	printf("[S] - Sair (interromper o jogo voltando ao menu inicial)\n");
+	printf("Opcao selecionada: ");
+}
+
+//Funcao responsavel por mostrar a mesa do jogo
+void mostrarMesa(peca carroca){
+    printf("==================Mesa==================\n");
+    printf("                [%d|%d]\n", carroca.lado1, carroca.lado2);
+    printf("========================================\n");
 }
 
 
@@ -89,6 +101,18 @@ void printarPecas(peca conjunto[]){
         printf("[%d|%d]", conjunto[gerar].lado1, conjunto[gerar].lado2);
     }
     printf("\n\n");
+}
+
+//funcao responsavel por limpar o terminal 
+void limparTela(){
+	system("clear");
+}
+
+void printarMao(peca mao[]){
+    for(int i = 0; i < 7; i++){
+        printf("[%d|%d]", mao[i].lado1, mao[i].lado2);
+    }
+    printf("\n");
 }
 
 /*

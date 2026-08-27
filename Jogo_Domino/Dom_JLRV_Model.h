@@ -12,6 +12,14 @@ typedef struct {
     int lado1;
     int lado2;
 } peca;
+
+typedef struct {
+    peca pecas[28];
+    int tamanho;
+    int ladoE;
+    int ladoD;
+} mesa;
 void geradorDomino(peca conjunto[]);
+peca encontrarMaiorCarroca(peca mao1[], peca mao2[]);
 
 #endif

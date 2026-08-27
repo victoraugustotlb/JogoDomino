@@ -12,4 +12,7 @@ void printMenu();
 void printarPecas(peca conjunto[]);
 void regras();
 void submenu();
+void limparTela();
+void printarMao(peca mao[]);
+void mostrarMesa(peca carroca);
 #endif

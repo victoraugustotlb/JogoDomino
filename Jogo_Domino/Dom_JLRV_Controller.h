@@ -10,4 +10,6 @@
 
 void embaralharConjunto(peca conjunto[]);
 void menu(peca conjunto[]);
+void menuJogar(peca conjunto[]);
+void distribuirPecas(peca conjunto[], peca mao1[], peca mao2[]);
 #endif

@@ -7,11 +7,15 @@
 
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 #include "Dom_JLRV_Model.cpp"
 #include "Dom_JLRV_Controller.cpp"
 
 
 int main(){
+    srand(time(NULL)); //faz com que a funcao rand() gere numeros diferentes a cada execucao do programa
 	peca conjunto[28];
     menu(conjunto);
 }
