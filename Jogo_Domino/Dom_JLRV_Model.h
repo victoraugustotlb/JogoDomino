@@ -14,4 +14,6 @@ typedef struct {
 } peca;
 void geradorDomino(peca conjunto[]);
 
+void pecaInicial(peca jogador1[], peca jogador2[], peca *resultadoPeca);
+
 #endif
