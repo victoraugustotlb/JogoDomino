@@ -31,7 +31,7 @@ void menu(peca conjunto[]){
             printarPecas(conjunto);
 		}
         else if(escolha == 4){
-            rodando = 0;
+            regras();
         }
 	}
 }
