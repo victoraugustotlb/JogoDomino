@@ -81,3 +81,47 @@ void pecaInicial(peca jogador1[], peca jogador2[], peca *resultadoPeca)
     }
 }
 
+void verificarSegundaJogada(peca Jogador1[], peca Jogador2[], int *jogadoratual)
+{
+    int tam1 = 0;
+    int tam2 = 0;
+
+    while (Jogador1[tam1].ladoA != -1) 
+    {
+        tam1++;
+    }
+
+    while (Jogador2[tam2].ladoA != -1) 
+    {
+        tam2++;
+    }
+    
+    if (tam1 > tam2) 
+    {
+        *jogadoratual = 1;
+    }
+    else if (tam1 < tam2) 
+    {
+        *jogadoratual = 2;
+    }
+    
+    printf("E a vez do Jogador %d jogar!\n", *jogadoratual);
+    printf("Status atual -> Jogador 1 tem %d pecas | Jogador 2 tem %d pecas.\n\n", tam1, tam2);
+}
+
+void verificarQuemJoga(peca Jogador1[], peca Jogador2[], int *jogadoratual) 
+{
+    if(*jogadoratual == 1)
+    {
+        *jogadoratual = 2;
+    }
+    else
+    {
+        *jogadoratual = 1;
+    }    
+    
+    // Removido tam1 e tam2 para evitar erro de compilação
+    printf("E a vez do Jogador %d jogar!\n\n", *jogadoratual);
+}
+
+
