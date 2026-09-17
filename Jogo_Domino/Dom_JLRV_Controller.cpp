@@ -45,3 +45,121 @@ void embaralharConjunto(peca conjunto[]){
         conjunto[j] = temp; 
     } 
 }
+
+
+void turnoIA(peca jogador2[], mesa *mesaJogo, peca monte[], int *topoMonte) {
+
+    bool acaoConcluida = false;
+    while (!acaoConcluida) {
+
+        int melhor_soma = -1;
+
+        int indice_melhor = -1;
+
+        char lado_melhor = ' ';
+
+        int qtd_validas = 0;
+
+        int codigo_validacao = -1;
+        
+
+        for (int i = 0; i < 21; i++) {
+
+            if (jogador2[i].lado1 == -1 && jogador2[i].lado2 == -1) continue;
+            
+
+            int codE = validarJogada(jogador2[i], *mesaJogo, 'e');
+
+            if (codE != -1) {
+
+                qtd_validas++;
+
+                int soma = jogador2[i].lado1 + jogador2[i].lado2;
+
+                if (soma > melhor_soma) {
+
+                    melhor_soma = soma;
+
+                    indice_melhor = i;
+
+                    lado_melhor = 'e';
+
+                    codigo_validacao = codE;
+
+                }
+
+            }
+            
+
+            int codD = validarJogada(jogador2[i], *mesaJogo, 'd');
+
+            if (codD != -1) {
+
+                qtd_validas++;
+
+                int soma = jogador2[i].lado1 + jogador2[i].lado2;
+
+                if (soma > melhor_soma) {
+
+                    melhor_soma = soma;
+
+                    indice_melhor = i;
+
+                    lado_melhor = 'd';
+
+                    codigo_validacao = codD;
+
+                }
+
+            }
+
+        }
+
+        
+
+		if (qtd_validas > 0) 
+		{
+
+            
+            int ladoA = jogador2[indice_melhor].lado1;
+            int ladoB = jogador2[indice_melhor].lado2;
+
+            atualizarMesa(jogador2[indice_melhor], mesaJogo, lado_melhor, codigo_validacao);
+
+            printf("\nA IA jogou a peca [%d|%d] no lado %c.\n", ladoA, ladoB, lado_melhor);
+
+            
+            jogador2[indice_melhor].lado1 = -1;
+            jogador2[indice_melhor].lado2 = -1;
+
+            acaoConcluida = true;
+
+        }
+
+        
+
+        else {
+
+            if (*topoMonte < 14) {
+
+                comprarPeca(jogador2, monte, topoMonte);
+
+                printf("A IA comprou uma peca do monte.\n");
+
+                
+
+            } else {
+
+                
+
+                printf("\nA IA passou a vez (monte vazio e sem jogadas).\n");
+
+                acaoConcluida = true;
+
+            }
+
+        }
+
+    }
+
+}
